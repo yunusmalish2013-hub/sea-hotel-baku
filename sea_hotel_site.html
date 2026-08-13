@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SEA HOTEL — Baku</title>
+<style>
+:root{--navy:#071b2b;--gold:#d8b36a;--sand:#f5f1e8;--white:#fff;--muted:#6d7780}
+*{box-sizing:border-box} body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--sand);color:var(--navy)}
+.hero{min-height:88vh;background:linear-gradient(180deg,rgba(4,19,31,.35),rgba(4,19,31,.82)),linear-gradient(120deg,#164b66,#79a9b8 55%,#d9c49a);color:#fff;display:flex;flex-direction:column}
+nav{display:flex;justify-content:space-between;align-items:center;padding:24px 6%;position:relative;z-index:2}
+.logo{font-size:25px;letter-spacing:5px;font-weight:800}.navlinks{display:flex;gap:26px}.navlinks a{color:#fff;text-decoration:none}
+.hero-content{max-width:1100px;margin:auto;padding:70px 6%}.eyebrow{letter-spacing:4px;color:#f0d49a;font-size:13px}.hero h1{font-size:clamp(48px,8vw,94px);line-height:.95;margin:18px 0}.hero p{font-size:20px;max-width:650px;line-height:1.6}.btn{display:inline-block;padding:15px 25px;border-radius:999px;background:var(--gold);color:#071b2b;text-decoration:none;font-weight:700;border:0;cursor:pointer}
+section{padding:80px 6%;max-width:1250px;margin:auto}.title{text-align:center;margin-bottom:45px}.title h2{font-size:40px;margin:8px 0}.title p{color:var(--muted)}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.feature,.card{background:#fff;border-radius:24px;padding:28px;box-shadow:0 12px 35px rgba(7,27,43,.08)}.feature h3{margin-bottom:8px}.feature p{color:var(--muted);line-height:1.55}
+.rooms{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{overflow:hidden;padding:0}.photo{height:190px;background:linear-gradient(135deg,#4f8297,#d4c09b);display:flex;align-items:flex-end;padding:18px;color:white;font-weight:800}.card-body{padding:24px}.price{font-size:26px;font-weight:800;margin:14px 0}.prices{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.prices div{background:#f4f6f6;border-radius:12px;padding:10px;font-size:12px}.prices b{display:block;font-size:16px;margin-top:4px}
+.booking{background:var(--navy);color:white;max-width:none}.booking-inner{max-width:1250px;margin:auto}.form{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.form label{font-size:12px;color:#b9c4cb}.form input,.form select{width:100%;padding:14px;border-radius:12px;border:0;margin-top:7px}.summary{margin-top:20px;padding:20px;border:1px solid #365064;border-radius:16px;display:none}.summary strong{color:#f0d49a}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}.about-box{background:linear-gradient(135deg,#d7c091,#6b99a7);min-height:380px;border-radius:30px}.list{line-height:2;color:#40515c}
+footer{padding:35px 6%;background:#04131f;color:#b8c5cc;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:850px){.features,.rooms,.about{grid-template-columns:1fr}.form{grid-template-columns:1fr 1fr}.navlinks{display:none}}
+@media(max-width:520px){.form,.prices{grid-template-columns:1fr}.hero{min-height:75vh}}
+</style>
+</head>
+<body>
+<header class="hero">
+<nav><div class="logo">SEA HOTEL</div><div class="navlinks"><a href="#rooms">Номера</a><a href="#experience">Отель</a><a href="#booking">Бронирование</a></div></nav>
+<div class="hero-content">
+<div class="eyebrow">BAKU · CASPIAN SEA · FIRST LINE</div>
+<h1>Luxury,<br>by the sea.</h1>
+<p>Премиальный морской курорт в Баку: панорамные виды, собственная пляжная зона, бассейны, SPA, rooftop-ресторан и приватные бунгало.</p>
+<a class="btn" href="#booking">Забронировать</a>
+</div>
+</header>
+
+<section id="experience">
+<div class="title"><div class="eyebrow">THE EXPERIENCE</div><h2>Всё для идеального отдыха</h2><p>Sea Hotel работает круглый год для семей, пар и международных гостей.</p></div>
+<div class="features">
+<div class="feature"><h3>🌊 Первая линия</h3><p>Панорамные виды на Каспийское море и собственная пляжная зона.</p></div>
+<div class="feature"><h3>🏊 Бассейны</h3><p>Большой открытый бассейн и отдельный бассейн для детей.</p></div>
+<div class="feature"><h3>💎 Premium SPA</h3><p>Хамам, сауна, массажные кабинеты и релакс-зоны.</p></div>
+<div class="feature"><h3>🏡 Бунгало</h3><p>20+ приватных бунгало с собственными небольшими бассейнами.</p></div>
+<div class="feature"><h3>👨‍👩‍👧 Family Club</h3><p>Большой детский клуб и анимация для семейного отдыха.</p></div>
+<div class="feature"><h3>🌅 Rooftop</h3><p>Премиальный ресторан на крыше с панорамным видом на море.</p></div>
+</div>
+</section>
+
+<section id="rooms">
+<div class="title"><div class="eyebrow">STAY</div><h2>Номера и люксы</h2><p>Цены ниже — плановые тарифы для концепции сайта; финальные цены устанавливаются после запуска.</p></div>
+<div class="rooms">
+<div class="card"><div class="photo">DELUXE</div><div class="card-body"><h3>Обычный номер</h3><p>Современный комфорт, часть номеров с видом на территорию отеля.</p><div class="prices"><div>1 день<b>330 AZN</b></div><div>1 неделя<b>2 079 AZN</b></div><div>1 месяц<b>7 920 AZN</b></div></div></div></div>
+<div class="card"><div class="photo">VIP SEA VIEW</div><div class="card-body"><h3>VIP номер</h3><p>Премиальный номер с видом на море и расширенным сервисом.</p><div class="prices"><div>1 день<b>650 AZN</b></div><div>1 неделя<b>4 095 AZN</b></div><div>1 месяц<b>15 600 AZN</b></div></div></div></div>
+<div class="card"><div class="photo">PRESIDENTIAL</div><div class="card-body"><h3>Президентский номер</h3><p>Максимум приватности, пространства и панорамный вид на море.</p><div class="prices"><div>1 день<b>1 500 AZN</b></div><div>1 неделя<b>9 450 AZN</b></div><div>1 месяц<b>36 000 AZN</b></div></div></div></div>
+</div>
+</section>
+
+<section>
+<div class="about"><div><div class="eyebrow">SEA HOTEL · BAKU</div><h2>Современная морская роскошь</h2><p class="list">7-этажный курортный комплекс · международная кухня · большой SPA · средний фитнес-зал · конференц-залы и бизнес-центр · ночная зона · платная подземная парковка · трансфер из аэропорта.</p></div><div class="about-box"></div></div>
+</section>
+
+<section class="booking" id="booking">
+<div class="booking-inner">
+<div class="title"><div class="eyebrow">RESERVATION</div><h2>Забронировать номер</h2><p style="color:#b9c4cb">Выберите даты и категорию. Сайт рассчитает стоимость и подготовит заявку.</p></div>
+<div class="form">
+<div><label>Заезд</label><input type="date" id="checkin"></div>
+<div><label>Выезд</label><input type="date" id="checkout"></div>
+<div><label>Категория</label><select id="room"><option value="300">Обычный номер — 330 AZN/ночь</option><option value="500">VIP номер — 650 AZN/ночь</option><option value="1000">Президентский — 1 500 AZN/ночь</option></select></div>
+<div><label>Гостей</label><input type="number" id="guests" min="1" value="2"></div>
+</div>
+<div style="margin-top:18px"><button class="btn" onclick="book()">Рассчитать бронирование</button></div>
+<div class="summary" id="summary"></div>
+</div>
+</section>
+
+<footer><div><b style="color:white">SEA HOTEL</b><br>Luxury by the Caspian Sea · Baku, Azerbaijan</div><div>© 2026 Sea Hotel · Концепт сайта</div></footer>
+
+<script>
+function book(){
+ const a=new Date(document.getElementById('checkin').value), b=new Date(document.getElementById('checkout').value);
+ const price=Number(document.getElementById('room').value), guests=document.getElementById('guests').value;
+ const s=document.getElementById('summary');
+ if(!document.getElementById('checkin').value||!document.getElementById('checkout').value||b<=a){s.style.display='block';s.innerHTML='<strong>Выберите корректные даты.</strong>';return}
+ const nights=Math.ceil((b-a)/86400000), total=nights*price;
+ s.style.display='block';
+ s.innerHTML=`<strong>Заявка готова</strong><br>Ночей: ${nights} · Гостей: ${guests} · Стоимость: <strong>${total.toLocaleString('ru-RU')} AZN</strong><br><small>Для реального бронирования подключите PMS/платёжный сервис и форму отправки заявки.</small>`;
+}
+</script>
+</body>
+</html>
